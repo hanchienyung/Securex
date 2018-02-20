@@ -45,4 +45,14 @@ public class BookController {
         bookRepository.delete(bookid);
         return "listbooks";
     }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
+
+    @RequestMapping("/logout")
+    public String secure(){
+        return "homepage";
+    }
 }
